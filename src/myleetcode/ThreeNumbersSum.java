@@ -1,6 +1,7 @@
 package myleetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -37,11 +38,7 @@ public class ThreeNumbersSum {
 		if (positiveNumbers.size() == 0) {
 			return result;
 		} else if ((zeroLastIndex = positiveNumbers.lastIndexOf(0)) >= 2) {
-			List<Integer> list = new ArrayList<>();
-			list.add(0);
-			list.add(0);
-			list.add(0);
-			result.add(list);
+			result.add(Arrays.asList(0, 0, 0));
 			b = zeroLastIndex;
 			if (b >= positiveNumbers.size() - 1) {
 				a ++;
@@ -83,11 +80,7 @@ public class ThreeNumbersSum {
 				tempB = numB;
 				int quotients = - (numA + numB);
 				if (negativeSet.contains(quotients)) {
-					List<Integer> list = new ArrayList<>();
-					list.add(numA);
-					list.add(numB);
-					list.add(quotients);
-					result.add(list);
+					result.add(Arrays.asList(numA, numB, quotients));
 				}
 				if (b >= positiveNumbers.size() - 1) {
 					while (positiveNumbers.get(++a) == tempA) {
@@ -139,11 +132,7 @@ public class ThreeNumbersSum {
 				tempB = numB;
 				int quotients = - (numA + numB);
 				if (positiveSet.contains(quotients)) {
-					List<Integer> list = new ArrayList<>();
-					list.add(numA);
-					list.add(numB);
-					list.add(quotients);
-					result.add(list);
+					result.add(Arrays.asList(numA, numB, quotients));
 				}
 				if (b >= negativeNumbers.size() - 1) {
 					while (negativeNumbers.get(++a) == tempA) {
