@@ -1,11 +1,5 @@
 package myleetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-
 /**
  * 求众数 (摩尔投票法)
  * 
