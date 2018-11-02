@@ -1,5 +1,7 @@
 package myleetcode;
 
+import entity.ListNode;
+
 /**
  * 环形链表
  * 追赶相遇

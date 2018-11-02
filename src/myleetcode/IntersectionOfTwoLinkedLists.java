@@ -12,10 +12,6 @@ import entity.ListNode;
  */
 public class IntersectionOfTwoLinkedLists {
 
-	public static void main(String[] args) {
-		
-	}
-	
 	public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode aListNode = headA;
         ListNode bListNode = headB;

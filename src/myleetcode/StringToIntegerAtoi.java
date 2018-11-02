@@ -9,13 +9,6 @@ import java.math.BigInteger;
  */
 public class StringToIntegerAtoi {
 
-	public static void main(String[] args) {
-
-		System.out.println(myAtoi("      -42"));
-		System.out.println('a' - '1');
-	}
-	
-	
 	public static int myAtoi(String str) {
 		str = str.trim();
 		String[] split = str.split("([a-z][A-Z]{0,})|([A-Z][a-z]{0,})|\\ |\\.");

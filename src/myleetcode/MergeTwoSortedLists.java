@@ -9,7 +9,6 @@ import entity.ListNode;
  */
 public class MergeTwoSortedLists {
 
-	
 	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		if (l1 == null) {
 			return l2;

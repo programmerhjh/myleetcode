@@ -1,5 +1,7 @@
 package myleetcode;
 
+import java.util.Arrays;
+
 /**
  * 两个排序数组的中位数
  * @author acer
@@ -7,14 +9,7 @@ package myleetcode;
  */
 public class MedianOfTwoSortedArrays {
 	
-	public static void main(String[] args) {
-		int[] nums1 = new int[] {};
-		int[] nums2 = new int[] {1};
-		System.out.println(findMedianSortedArrays(nums1, nums2));
-	}
-
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-
 		double result = 0;
 		int[] resultArray = new int[nums1.length + nums2.length];
 		int[] totalNums = new int[nums1.length + nums2.length];
@@ -35,7 +30,6 @@ public class MedianOfTwoSortedArrays {
 		}
 		return result;
     }
-	
 	
 	static void mergearray(int a[], int first, int mid, int last, int b[])
 	{

@@ -1,6 +1,7 @@
 package myleetcode;
 
 import java.util.Stack;
+import entity.ListNode;
 
 
 /**
@@ -130,10 +131,4 @@ public class TheTwoFiguresTogether {
         return result;
     }
 	
-}
-
-class ListNode {
-	int val;
-	ListNode next;
-	ListNode(int x) { val = x; }
 }
