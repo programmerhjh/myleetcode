@@ -29,11 +29,6 @@ package myleetcode;
  */
 public class BooleanEvaluationLCCI {
 
-    public static void main(String[] args) {
-        int rs = new BooleanEvaluationLCCI().countEval("1^0|0|1", 0);
-        System.out.println(rs);
-    }
-
     public int countEval(String s, int result) {
         int len = s.length();
         char[] chars = s.toCharArray();
